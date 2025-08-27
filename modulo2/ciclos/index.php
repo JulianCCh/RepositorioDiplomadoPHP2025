@@ -58,5 +58,28 @@ caracteres.*/
 
 $palabra = "palabra";
 
+$cont = 0;
+
+while ($cont < strlen($palabra)) {
+    echo $palabra[$cont]."<br>";
+    $cont++;
+}
+
+/*- Desarrollar un programa que genere números aleatorios entre 1 y 50 y se
+detenga cuando genere un múltiplo de 10.*/
+
+$flag = false;
+
+while (!$flag) {
+    $ram = mt_rand(1,50);
+    echo $ram." ";
+
+    if ($ram % 10 == 0) {
+        $flag = true;
+    }
+}
+
+
+
 
 ?>
